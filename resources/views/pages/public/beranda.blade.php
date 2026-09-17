@@ -34,7 +34,7 @@
             <div class="bg-white rounded-xl shadow-lg overflow-hidden p-8 md:p-12">
                 <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
                     <div class="w-full md:w-1/3 flex justify-center">
-                        <img src="{{ $pengaturans['foto_kepsek'] ? asset('storage/' . $pengaturans['foto_kepsek']) : 'https://via.placeholder.com/400x400.png/E0E0E0/AAAAAA?text=Foto+Kepala+Sekolah' }}" 
+                        <img src="{{ !empty($pengaturans['foto_kepsek']) ? asset('storage/' . $pengaturans['foto_kepsek']) : 'https://via.placeholder.com/400x400.png/E0E0E0/AAAAAA?text=Foto+Kepala+Sekolah' }}" 
                              alt="Kepala Sekolah" 
                              class="h-48 w-48 md:h-64 md:w-64 rounded-full object-cover shadow-md">
                     </div>
